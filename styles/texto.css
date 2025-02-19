@@ -1,0 +1,54 @@
+.texto-apresentacao {
+    font-size: 1rem;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+
+    color: var(--Grey);
+    line-height: 150%;
+    letter-spacing: 4px;
+}
+
+.texto-titulo {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 2rem;
+
+    color: var(--Black);
+    line-height: 100%;
+}
+
+.texto-descricao {
+    font-size: 1rem;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+
+    color: var(--Grey);
+    line-height: 150%;
+}
+
+.preco-desconto {
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 2rem;
+
+    color: var(--Green500);
+    line-height: 100%;
+}
+
+.preco-original {
+    font-size: 1rem;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+
+    color: var(--Grey);
+    line-height: 150%;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+

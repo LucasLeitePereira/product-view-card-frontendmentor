@@ -1,0 +1,90 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--Cream);
+}
+
+.caixa-central {
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+
+    background: var(--White);
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+button {
+    background-color: var(--Green500);
+    border: none;
+    padding: 5%;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+
+    color: var(--White);
+
+    font-size: 1rem;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    background: var(--Green700);
+    transition: all 0.4s;
+}
+
+picture img {
+    max-inline-size: 100%;
+  }
+
+
+@media (min-width:768px) and (max-width: 1023px) {
+    .caixa-central {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .caixa-central {
+        width: 40%;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+    .conteudo {
+        gap: 2rem;
+    }
+
+    picture img {
+        width: 100%; /* Garante que a imagem ocupe a largura total do contêiner */
+        height: 100%; /* Faz a imagem ocupar a altura total do contêiner */
+        object-fit: cover;
+    }
+
+}
+
